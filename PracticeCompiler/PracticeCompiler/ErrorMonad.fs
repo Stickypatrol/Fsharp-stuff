@@ -19,17 +19,3 @@ type ErrorBuilder() =
   member this.Bind(p,k) = p >>= k
 
 let err = ErrorBuilder()
-
-
-
-
-(*
-let MonadStuff x y : Result<int> =
-  err{
-  let! x_v = x
-  let! y_v = y
-  if x_v <> 0 then
-    return x_v/y_v
-  else
-    return! fail ["error motherfucker, it's undefined "]
-  }*)

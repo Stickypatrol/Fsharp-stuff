@@ -6,7 +6,7 @@ type Parser<'char, 'a> = List<'char> -> Result<'a * List<'char>>
 
 let ret (x:'a) : Parser<'char, 'a> =
   fun (buf:List<'char>) ->
-    err{
+    err{  
       return (x, buf)
     } : Result<'a * List<'char>>
 
@@ -43,7 +43,6 @@ let getFirstSymbol : Parser<'char,'char> =
         return! ErrorMonad.fail ["unexpected EOF"]
       }
 
-
 let eof : Parser<'char, unit> =
   fun buf ->
     match buf with
@@ -67,6 +66,14 @@ let (.||) (p1:Parser<'char, 'a>) (p2:Parser<'char, 'a>) : Parser<'char,'a> =
         Result(x, buf')
     | Result(x, buf') ->
       Result(x, buf')
+
+let lookahead (p:Parser<'char, 'a>) : Parser<'char, Unit> =
+  fun buf ->
+    match p buf with
+    | Error msg -> Error msg
+    | Result(x,buf') -> Result((), buf)
+
+
 
 let rec repeat (p: Parser<'char, 'a>) : Parser<'char,List<'a>> =
   prs{

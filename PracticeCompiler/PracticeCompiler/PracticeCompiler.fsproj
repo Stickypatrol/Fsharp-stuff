@@ -59,9 +59,11 @@
     <Compile Include="ErrorMonad.fs" />
     <Compile Include="ParserMonad.fs" />
     <Compile Include="Lexer.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="Parenthesizer.fs" />
+    <Compile Include="Prioritizer.fs" />
+    <Compile Include="State.fs" />
     <None Include="App.config" />
-    <Content Include="main.txt" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

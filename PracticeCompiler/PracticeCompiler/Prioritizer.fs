@@ -4,7 +4,8 @@ open Parenthesizer
 open Common
 
 type Expression =
-  Literal of Literal | Id of Id
+  | Literal of Literal
+  | Id of Id
   | DividedBy of Expression * Expression
   | Plus of Expression * Expression
   | Minus of Expression * Expression

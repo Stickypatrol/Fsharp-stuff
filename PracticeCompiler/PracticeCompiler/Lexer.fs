@@ -10,15 +10,13 @@ type Token =
   | Open of Bracket
   | Closed of Bracket
 
-
-
 let digit : Parser<char,char> =
   prs{
     let! x = getFirstSymbol
     if x >= '0' && x <= '9' then
       return x
     else
-      return! fail ["error: expected digit"]
+      return! fail ["error: expected digit symbol"]
   }
 
 let alphabetic : Parser<char,char> =
@@ -27,7 +25,7 @@ let alphabetic : Parser<char,char> =
     if (x >= 'A' && x <= 'Z') || (x >= 'a' && x <= 'z') then
       return x
     else
-      return! fail ["error: expected alphabetic"]
+      return! fail ["error: expected alphabetic symbol"]
   }
 
 let integer : Parser<char, Token> =
@@ -51,7 +49,7 @@ let rec word (s:List<char>) : Parser<char,Unit> =
       if d = x then
         return! word xs
       else
-        return! fail ["error: unexpected character"]
+        return! fail ["error: unexpected character in this word"]
     }
 
 let wordToKeyword s k =

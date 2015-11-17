@@ -1,6 +1,8 @@
 ﻿module ErrorMonad
 
-type Result<'a> = Result of 'a | Error of List<string>
+type Result<'a> =
+| Result of 'a
+| Error of List<string>
 
 //return op
 let ret (x:'a) : Result<'a> = Result(x)

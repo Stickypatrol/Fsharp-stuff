@@ -59,13 +59,10 @@ let (.||) (p1:Parser<'char, 'a>) (p2:Parser<'char, 'a>) : Parser<'char,'a> =
   fun buf ->
     match p1 buf with
     | Error e1 ->
-      match p2 buf with
-      | Error e2 ->
-        Error(List.append e1 e2)
-      | Result(x, buf') ->
-        Result(x, buf')
-    | Result(x, buf') ->
-      Result(x, buf')
+                          match p2 buf with
+                          | Error e2 ->         Error(List.append e1 e2)
+                          | Result(x, buf') ->  Result(x, buf')
+    | Result(x, buf') ->  Result(x, buf')
 
 let lookahead (p:Parser<'char, 'a>) : Parser<'char, Unit> =
   fun buf ->
@@ -74,7 +71,7 @@ let lookahead (p:Parser<'char, 'a>) : Parser<'char, Unit> =
     | Result(x,buf') -> Result((), buf)
 
 
-
+//this function repeats an instance of the parser monad
 let rec repeat (p: Parser<'char, 'a>) : Parser<'char,List<'a>> =
   prs{
     let! x = p

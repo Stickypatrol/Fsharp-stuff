@@ -1,4 +1,4 @@
-﻿namespace Problem_7_Flatten_list_structure.AssemblyInfo
+﻿namespace MaybeMonad.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("Problem 7 Flatten list structure")>]
+[<assembly: AssemblyTitle("MaybeMonad")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("Microsoft")>]
-[<assembly: AssemblyProduct("Problem 7 Flatten list structure")>]
+[<assembly: AssemblyProduct("MaybeMonad")>]
 [<assembly: AssemblyCopyright("Copyright © Microsoft 2015")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
@@ -22,7 +22,7 @@ open System.Runtime.InteropServices
 [<assembly: ComVisible(false)>]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[<assembly: Guid("0b15fd52-9af4-43a7-b94c-ef4f01203273")>]
+[<assembly: Guid("fb0ed09f-1818-47a4-b333-b78c1d9dc790")>]
 
 // Version information for an assembly consists of the following four values:
 // 

@@ -1,4 +1,4 @@
-﻿namespace Problem_1.AssemblyInfo
+﻿namespace FSharp3DConsole.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("Problem 1")>]
+[<assembly: AssemblyTitle("FSharp3DConsole")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("Microsoft")>]
-[<assembly: AssemblyProduct("Problem 1")>]
+[<assembly: AssemblyProduct("FSharp3DConsole")>]
 [<assembly: AssemblyCopyright("Copyright © Microsoft 2015")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
@@ -22,7 +22,7 @@ open System.Runtime.InteropServices
 [<assembly: ComVisible(false)>]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[<assembly: Guid("4074617b-6103-41e8-9538-4734a2b2faa3")>]
+[<assembly: Guid("d8634439-16a2-4ce9-a58f-46f264589f68")>]
 
 // Version information for an assembly consists of the following four values:
 // 

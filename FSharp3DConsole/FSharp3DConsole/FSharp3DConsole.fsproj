@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4074617b-6103-41e8-9538-4734a2b2faa3</ProjectGuid>
+    <ProjectGuid>d8634439-16a2-4ce9-a58f-46f264589f68</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Problem_1</RootNamespace>
-    <AssemblyName>Problem_1</AssemblyName>
+    <RootNamespace>FSharp3DConsole</RootNamespace>
+    <AssemblyName>FSharp3DConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
-    <Name>Problem 1 return last element of list</Name>
+    <Name>FSharp3DConsole</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\Problem_1.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\FSharp3DConsole.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,7 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\Problem_1.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\FSharp3DConsole.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>

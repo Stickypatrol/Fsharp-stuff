@@ -15,4 +15,4 @@ open Lexer
 
 //we then turn this list of tokens into blocks, which we can then process further...
 
-let file  = System.IO.File.ReadAllText "main.txt"
+let file = System.IO.File.ReadAllText "main.txt"
